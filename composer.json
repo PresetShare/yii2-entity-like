@@ -1,0 +1,25 @@
+{
+    "name": "presetshare/yii2-entity-like",
+    "description": "User-like features for Yii2 Applications",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","module","like"],
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/presetshare/yii2-entity-like/issues",
+        "source": "https://github.com/presetshare/yii2-entity-like"
+    },
+    "authors": [
+        {
+            "name": "Sakhnovkrg",
+            "email": "sakhnov.krg@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "presetshare\\yii2\\likes\\": ""
+        }
+    }
+}
