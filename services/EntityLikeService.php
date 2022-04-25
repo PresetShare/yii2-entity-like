@@ -63,6 +63,7 @@ class EntityLikeService
             $like->trigger(EntityLike::EVENT_AFTER_FIRST_LIKE_TOGGLE, new EntityLikeEvent([
                 'entityAuthorId' => $this->getAuthorId($model),
                 'entityClass' => get_class($model),
+                'likerId' => $user->id,
                 'action' => $action
             ]));
         }
@@ -70,6 +71,7 @@ class EntityLikeService
         $like->trigger(EntityLike::EVENT_AFTER_LIKE_TOGGLE, new EntityLikeEvent([
             'entityAuthorId' => $this->getAuthorId($model),
             'entityClass' => get_class($model),
+            'likerId' => $user->id,
             'action' => $action
         ]));
 
