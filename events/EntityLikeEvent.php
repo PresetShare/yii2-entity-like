@@ -7,9 +7,14 @@ use yii\base\Event;
 class EntityLikeEvent extends Event
 {
     /**
-     * @var int|null
+     * @var int
      */
     public $entityAuthorId;
+    
+    /**
+     * @var int
+     */
+    public $likerId;
 
     /**
      * @var string
